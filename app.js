@@ -2,7 +2,7 @@
 let yt_apiKey = ""
 
 async function getApiKey(){
-  let yt_apiKey_brut = await fetch("./apikey.json")
+  let yt_apiKey_brut = await fetch("apikey.json")
   yt_apiKey_brut = await yt_apiKey_brut.json()
   yt_apiKey = yt_apiKey_brut.key
 }
