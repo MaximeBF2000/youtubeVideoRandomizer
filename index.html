@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random video from youtube channel</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="center">
+    <h1>Youtube video randomizer</h1>
+    <input type="text" id="channelLink" placeholder="Type the link of a youtube channel" oninput="handleInput()" />
+    <button id="randomVidBtn" onclick="generateRandomVid()" >Generate random video from the channel</button>
+    <iframe id="vid" width="800" height="450" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <footer></footer>
+</body>
+</html>
