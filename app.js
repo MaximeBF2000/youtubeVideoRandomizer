@@ -1,5 +1,12 @@
-const yt_apiKey = "AIzaSyDKwx2nvGStUA3TyHLJyqvX7fNCS9v6glc" // youtube data API key
+// youtube data API key (make it secret for github)
+let yt_apiKey = ""
 
+async function getApiKey(){
+  let yt_apiKey_brut = await fetch("./apikey.json")
+  yt_apiKey_brut = await yt_apiKey_brut.json()
+  yt_apiKey = yt_apiKey_brut.key
+}
+getApiKey()
 
 let channel_id = ""
 let req_url = ""
